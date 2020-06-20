@@ -1,0 +1,68 @@
+.column{ width:100% }
+
+@media screen and (min-width: 600px) {
+    /* For tablets: */
+    .column { width: 50% }
+}
+
+@media screen and (min-width: 1024px) {
+    /* For desktop: */
+    .column { width: 33.333% }
+}
+
+.container {
+    display: flex; /* or inline-flex */
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-fluid{
+    width: 100%;
+  }
+.card{
+    width: 35rem;
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+circle {
+  fill: red;
+  stroke: black;
+  opacity: 0.3;
+}
+
+text {
+  font-family: sans-serif;
+}
+
+.tick text {
+  font-size: 2.7em;
+  fill: #635F5D;
+}
+
+.tick line {
+  stroke: #C0C0BB;
+}
+
+.axis-label {
+  font-size: 5em;
+  fill: #8E8883;
+}
+
+.title {
+  font-size: 3.7em;
+  fill: #635F5D;
+}
+
+.title-year {
+  font-size: 3.7em;
+  fill: blue;
+  opacity: 0.3;
+}
+ 

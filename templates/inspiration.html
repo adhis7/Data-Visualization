@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Inspiration Page | Data Visualization</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Data Visualization</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inspiration">Inspiration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="loaddata">Load Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid mt-5">
+            <div class=row>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{url_for('static', filename='img/bubble-chart-example.jpg')}}" alt="Data Visualization">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <p class="card-text">I am inspired by this site because of this site provides us concept of data visualization. The site represent data as a bauble makes a colour to separate each
+                                group of data also provides logical description of x-axis and y-axis. So I inspired from thi site content and try to implement that logic in my application.
+                                </p>
+                            <a href="https://chartio.com/learn/charts/what-is-a-scatter-plot/" class="btn btn-primary">click here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img class="card-img-top"src="{{url_for('static', filename='img/inspiration_page.jpg')}}" alt="Inspiration page inspiration">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspiration page </h5>
+                            <p class="card-text">This site inspired me through Graphical User Interface.The web site design simple no more colour is used. Navigation Bar is simple just company name and
+                            some link on right hand side and in body, content is divided into 3 grid view with suitable margin between each content. So I inspired from that design and made
+                                my application I same concept</p>
+                            <a href="https://visme.co/blog/category/video-animation/" class="btn btn-primary">click here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{url_for('static', filename='img/D3.jpg')}}" alt="D3 inspiration">
+                        <div class="card-body">
+                            <h5 class="card-title">D3 inspiration</h5>
+                            <p class="card-text">This site inspired me through it's list of examples. This website helped me to learn D3.js which has been used in this project.
+                                I learned much about data visualization. It helped me to create scatter plot.</p>
+                            <a href="https://d3js.org/" class="btn btn-primary">click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
