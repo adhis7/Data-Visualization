@@ -57,6 +57,11 @@ def getCountries(country_id=None):
         countries = Country.objects.get(id=country_id)
     return countries.to_json()
 
+@app.route('/countries/<country_name>', methods=['DELETE'])
+def deleteCountry(country_name):
+    print(country_name)
+    db.country.delete_one({'name' : country_name})
+    return jsonify({"status":"success"})
 
 
 @app.route("/loaddata")
@@ -105,7 +110,7 @@ def dataread():
 
 if __name__ =="__main__":
     #app.run(host='0.0.0.0', port=80)
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=8080, host='0.0.0.0')
 
 
  
