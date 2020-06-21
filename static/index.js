@@ -8,7 +8,7 @@
   const height = +svg.attr('height');
 
   const render = (data, correctedData) => {
-    const title = 'Male vs. Female';
+    const title = 'Life Expecpectancy: Male vs. Female';
     var title_year = +correctedData.Year;
 
     const xValue = d => d.Male;
